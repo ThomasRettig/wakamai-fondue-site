@@ -9,7 +9,7 @@
 				@change="getFont"
 			/>
 			<div class="info">
-				"What can my font do?"
+				“What can my font do?”
 				<strong>Drop a font</strong>
 				and find out!
 				<button
