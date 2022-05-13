@@ -22,7 +22,14 @@
 
 @font-face {
 	font-family: notdef;
+	font-display: block;
 	src: url("assets/AND-Regular.woff2");
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
 }
 
 html {
@@ -31,12 +38,6 @@ html {
 	min-width: 320px;
 	font-family: var(--system-font-stack);
 	scroll-behavior: smooth;
-}
-
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
 }
 
 body,
@@ -127,8 +128,8 @@ h3 {
 
 @media screen and (prefers-reduced-motion: reduce) {
     *,
-    *:before,
-    *:after {
+    *::before,
+    *::after {
         animation: none !important;
         transition: none !important;
     }
